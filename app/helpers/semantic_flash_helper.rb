@@ -15,7 +15,7 @@ module SemanticFlashHelper
   end
 
   def flash_container(type, message)
-    content_tag(:div, class: "ui #{type} message") do
+    content_tag(:div, class: "ui #{type} message closable") do
       content_tag(:i, '', class: "close icon") + message
     end
   end
